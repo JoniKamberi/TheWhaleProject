@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: white;
 }
 
 .logo {
@@ -13,6 +12,11 @@
     width: 2.5em;
     cursor: pointer;
     margin-right: 10px;
+    border-radius: 5px;
+}
+
+.logo:hover {
+    background-color: aqua;
 }
 
 .thewhale {
@@ -26,7 +30,7 @@
 }
 
 
-li, a, button {
+.navbar li, a, button {
     background-color: rgb(0, 0, 137);
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
@@ -35,7 +39,7 @@ li, a, button {
     text-decoration: none;
 }
 
-ul {
+.navbar ul {
     background-color: rgb(0, 0, 137);
 }
 
@@ -45,6 +49,9 @@ ul {
     justify-content: flex-end;
     align-items: center;
     padding: 15px 2%;
+
+    /* background: lightblue;
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out; */
 }
 
 .navbar-links {
@@ -64,7 +71,7 @@ ul {
     color: rgb(0, 195, 255)
 }
 
-button {
+.navbar button {
     margin-left: 20px;
     padding: 9px 25px;
     background-color: rgb(0, 195, 255);
@@ -76,4 +83,34 @@ button {
 
 button:hover {
     background-color: rgba(0, 169, 220, 0.8);
+}
+
+.main-page {
+    background-image: url("./assets/sky.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    height: 80%;
+    width: 30%;
+    max-width: 700px;
+}
+
+.headr {
+    margin-top: 15px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
 }
